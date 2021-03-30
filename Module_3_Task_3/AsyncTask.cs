@@ -18,7 +18,7 @@ namespace Module_3_Task_3
 
         public async Task<string> GetWorldAsync()
         {
-            return await Task.Run(() => "World");
+            return await Task.FromResult("World");
         }
 
         public async Task<string> GetFullText()
